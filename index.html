@@ -1,3 +1,5 @@
+<!-- E-cart using Fetch API Method -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +67,7 @@
 </body>
 <script>
     fetch('https://fakestoreapi.com/products').then((res)=>{
-        res.json().then((items)=>{ /* res.json is to parse to json format */
+        res.json().then((items)=>{ /* res.json is to parse to json format - returns a promise*/
             // console.log(items);
             items.forEach(element => {
                 result.innerHTML += ` <div class="col mb-5">
